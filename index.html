@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Styk Labs — independent app studio</title>
+<meta name="description" content="Styk Labs is an independent app studio from Ukraine. We make calm, useful apps for everyday life. Our first app: Zhyto, a personal and family budget.">
+<meta property="og:title" content="Styk Labs — independent app studio">
+<meta property="og:description" content="Calm, useful apps for everyday life. Made in Ukraine.">
+<meta property="og:url" content="https://styklabs.com/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500;700&family=Onest:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#F6F3EC; --card:#FFFDF8; --ink:#151513; --muted:#5F5B53; --line:#E3DCCD; --gold:#B8862A; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#121210; --card:#1B1A17; --ink:#F3EFE6; --muted:#A39E93; --line:#2E2C27; --gold:#E4B456; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 'Onest', system-ui, sans-serif; }
+  .wrap { max-width:960px; margin:0 auto; padding:0 20px; }
+  header { display:flex; align-items:center; justify-content:space-between; padding:26px 0; }
+  .brand { display:flex; align-items:center; gap:12px; font:700 20px 'Geologica', sans-serif; color:var(--ink); text-decoration:none; }
+  .brand img { width:36px; height:36px; }
+  nav a { color:var(--muted); text-decoration:none; margin-left:22px; font-size:15px; }
+  nav a:hover { color:var(--ink); }
+  .hero { padding:72px 0 64px; }
+  h1 { font:700 clamp(38px,6vw,64px)/1.06 'Geologica', sans-serif; letter-spacing:-0.02em; margin:0 0 22px; max-width:14ch; }
+  h1 span { color:var(--gold); }
+  .lead { color:var(--muted); font-size:clamp(17px,2.2vw,20px); max-width:52ch; margin:0; }
+  h2 { font:700 26px 'Geologica', sans-serif; margin:0 0 22px; }
+  section { padding:40px 0; }
+  .apps { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
+  .app { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:26px; display:flex; flex-direction:column; gap:14px; text-decoration:none; color:inherit; transition:transform .15s; }
+  a.app:hover { transform:translateY(-2px); }
+  .app img { width:64px; height:64px; border-radius:15px; }
+  .app h3 { font:700 22px 'Geologica', sans-serif; margin:0; }
+  .app p { margin:0; color:var(--muted); }
+  .meta { font-size:14px; color:var(--gold); font-weight:500; }
+  .soon { border-style:dashed; justify-content:center; min-height:220px; }
+  .soon .dot { width:64px; height:64px; border-radius:15px; border:1.5px dashed var(--line); }
+  .principles { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:24px; }
+  .principles h3 { font:500 18px 'Geologica', sans-serif; margin:0 0 6px; }
+  .principles p { margin:0; color:var(--muted); font-size:16px; }
+  .contact a { color:var(--ink); font:700 clamp(22px,3.5vw,32px) 'Geologica', sans-serif; text-decoration:none; border-bottom:2px solid var(--gold); }
+  footer { border-top:1px solid var(--line); margin-top:48px; padding:26px 0 40px; color:var(--muted); font-size:14px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+  footer a { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="/"><img src="favicon.svg" alt="">Styk Labs</a>
+    <nav><a href="#apps">Apps</a><a href="#contact">Contact</a></nav>
+  </header>
+
+  <div class="hero">
+    <h1>Calm, useful apps for <span>everyday life.</span></h1>
+    <p class="lead">Styk Labs is an independent app studio from Ukraine. We build a few products and take care of every detail — simple to use, honest in pricing, private by design.</p>
+  </div>
+
+  <section id="apps">
+    <h2>Our apps</h2>
+    <div class="apps">
+      <a class="app" href="https://zhyto.app/">
+        <img src="zhyto-icon.png" alt="Zhyto app icon">
+        <h3>Zhyto</h3>
+        <p>A personal and family budget that records spending almost by itself — by voice, from a receipt photo, Apple Pay or your bank.</p>
+        <div class="meta">iOS · Android · zhyto.app →</div>
+      </a>
+      <div class="app soon">
+        <div class="dot"></div>
+        <h3>Next app</h3>
+        <p>In the works. More soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How we work</h2>
+    <div class="principles">
+      <div><h3>Useful first</h3><p>Every screen has to earn its place. If it can be simpler, we make it simpler.</p></div>
+      <div><h3>Private by design</h3><p>No ads in our apps. We collect only what the app needs and never sell data.</p></div>
+      <div><h3>Made in Ukraine</h3><p>A small team building products for people in Ukraine and around the world.</p></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p><a href="mailto:hello@styklabs.com">hello@styklabs.com</a></p>
+  </section>
+
+  <footer>
+    <span>© 2026 Styk Labs · Ukraine</span>
+    <span>App support: <a href="mailto:support@zhyto.app">support@zhyto.app</a></span>
+  </footer>
+</div>
+</body>
+</html>
